@@ -23,6 +23,12 @@ public class ListasSimple {
     // Recorrer usando getDato() y getSig()
     public void recorrer() {
         Nodo actual = cabeza;
+
+	if (cabeza == null){
+		System.out.println("Lista Vacia");
+		return;
+	}
+
         while (actual != null) {
             System.out.println(actual.getDato()); // Acceso privado mediante método
             actual = actual.getSig();             // Acceso privado mediante método
